@@ -1,0 +1,125 @@
+.App {
+  text-align: center;
+  background-color: #303133;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+.App-header {
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-header h1 {
+  text-shadow: 3px 3px #8b874d;
+}
+
+.movie-input {
+  height: 40px;
+  width: 370px;
+  border-radius: 7px;
+  font-size: 20px;
+  margin-bottom: 30px;
+  padding: 4px;
+}
+
+.movie-container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-bottom: 5em;
+}
+
+.movie-wrapper {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(24, 24, 24);
+  color: black;
+  margin: 15px;
+  padding: 10px;
+  border-radius: 15px;
+  width: 350px;
+  min-height: 650px;
+  transition: 0.5s ease-in-out;
+}
+
+.movie-wrapper:hover {
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.973);
+}
+
+.movie-konten {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 20px;
+  transition: 0.5s ease-in-out;
+}
+
+.movie-title {
+  display: flex;
+  justify-content: center;
+  height: 3em;
+  font-size: 30px;
+  font-weight: bold;
+  color: white;
+}
+
+.movie-image {
+  width: 320px;
+  border-radius: 15px;
+}
+
+.movie-date {
+  color: #c0c1c4;
+  font-size: 19px;
+  margin-top: 10px;
+}
+
+.movie-rate {
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: aliceblue;
+  margin-top: 5px;
+  gap: 0.3em;
+}
+
+.movie-rate > .star {
+  color: rgb(223, 223, 68);
+}
+
+.movie-overview {
+  position: absolute;
+  transition: 0.5s ease-in-out;
+  opacity: 0;
+  visibility: hidden;
+  color: white;
+  font-size: 28px;
+  padding: 10px;
+}
+
+.overview {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.movie-wrapper:hover .movie-overview {
+  opacity: 1;
+  visibility: visible;
+}
+
+.movie-wrapper:hover .movie-konten {
+  opacity: 0;
+  visibility: hidden;
+}
