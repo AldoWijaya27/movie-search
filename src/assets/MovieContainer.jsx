@@ -12,7 +12,7 @@ const MovieContainer = () => {
   }, []);
 
   const search = async (q) => {
-    if (q.length > 3) {
+    if (q.length > 2) {
       const query = await searchMovie(q);
       setPopularMovies(query.results);
     }
@@ -47,7 +47,7 @@ const MovieContainer = () => {
   return (
     <div className='body-wrapper'>
       <input
-        placeholder='Search movie ....'
+        placeholder='Search (min: 3 letters) ....'
         className='movie-input'
         onChange={({ target }) => search(target.value)}
       />
