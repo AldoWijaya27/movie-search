@@ -11,9 +11,6 @@
 .App-header {
   font-size: calc(10px + 2vmin);
   color: white;
-}
-
-.App-header h1 {
   text-shadow: 3px 3px #8b874d;
 }
 
@@ -22,8 +19,9 @@
   width: 370px;
   border-radius: 7px;
   font-size: 20px;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
   padding: 4px;
+  border: 2px solid black;
 }
 
 .movie-container {
@@ -32,7 +30,6 @@
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  margin-bottom: 5em;
 }
 
 .movie-wrapper {
@@ -44,9 +41,10 @@
   color: black;
   margin: 15px;
   padding: 10px;
+  padding-top: 2px;
   border-radius: 15px;
-  width: 350px;
-  min-height: 650px;
+  width: 180px;
+  min-height: 350px;
   transition: 0.5s ease-in-out;
 }
 
@@ -60,38 +58,38 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  padding: 20px;
   transition: 0.5s ease-in-out;
 }
 
 .movie-title {
   display: flex;
   justify-content: center;
-  height: 3em;
-  font-size: 30px;
+  align-items: center;
+  height: 4.2em;
+  font-size: 18px;
   font-weight: bold;
   color: white;
 }
 
 .movie-image {
-  width: 320px;
+  width: 10em;
   border-radius: 15px;
 }
 
 .movie-date {
   color: #c0c1c4;
-  font-size: 19px;
+  font-size: 13px;
   margin-top: 10px;
 }
 
 .movie-rate {
-  font-size: 20px;
+  font-size: 14px;
   display: flex;
   align-items: center;
   justify-content: center;
   color: aliceblue;
   margin-top: 5px;
-  gap: 0.3em;
+  gap: 0.1em;
 }
 
 .movie-rate > .star {
@@ -104,7 +102,7 @@
   opacity: 0;
   visibility: hidden;
   color: white;
-  font-size: 28px;
+  font-size: 13px;
   padding: 10px;
 }
 
@@ -122,4 +120,134 @@
 .movie-wrapper:hover .movie-konten {
   opacity: 0;
   visibility: hidden;
+}
+
+@media screen and (max-width: 1024px) {
+  .movie-input {
+    height: 1.8em;
+    width: 20em;
+    font-size: 17px;
+    padding-left: 8px;
+  }
+
+  .movie-wrapper {
+    margin: 10px;
+    padding: 10px;
+    padding-top: 2px;
+    width: 140px;
+    min-height: 250px;
+  }
+
+  .movie-title {
+    height: 4.2em;
+    font-size: 14px;
+    font-weight: bold;
+    color: white;
+  }
+
+  .movie-image {
+    width: 8em;
+  }
+
+  .movie-date {
+    font-size: 12px;
+    margin-top: 6px;
+  }
+
+  .movie-rate {
+    font-size: 12px;
+    margin-top: 1px;
+    gap: 1.5px;
+  }
+
+  .movie-overview {
+    font-size: 11px;
+    padding: 7px;
+  }
+}
+@media screen and (max-width: 750px) {
+  .movie-input {
+    height: 1.6em;
+    width: 20em;
+    font-size: 15px;
+    padding-left: 8px;
+  }
+
+  .movie-wrapper {
+    margin: 8px;
+    padding: 6px;
+    padding-top: 1px;
+    width: 115px;
+    min-height: 240px;
+  }
+
+  .movie-title {
+    height: 4.2em;
+    font-size: 12px;
+    font-weight: bold;
+    color: white;
+  }
+
+  .movie-image {
+    width: 7em;
+  }
+
+  .movie-date {
+    font-size: 10px;
+    margin-top: 6px;
+  }
+
+  .movie-rate {
+    font-size: 10px;
+    margin-top: 1px;
+    gap: 1.5px;
+  }
+
+  .movie-overview {
+    font-size: 9.5px;
+    padding: 5px;
+  }
+}
+@media screen and (max-width: 500px) {
+  .movie-input {
+    height: 1.4em;
+    width: 20em;
+    font-size: 13px;
+    padding-left: 8px;
+  }
+
+  .movie-wrapper {
+    margin: 5px;
+    padding: 4px;
+    padding-top: 1px;
+    width: 100px;
+    min-height: 190px;
+  }
+
+  .movie-title {
+    height: 4.2em;
+    font-size: 9.5px;
+    font-weight: bold;
+    color: white;
+  }
+
+  .movie-image {
+    width: 5.8em;
+  }
+
+  .movie-date {
+    font-size: 8.5px;
+    margin-top: 6px;
+  }
+
+  .movie-rate {
+    font-size: 8.5px;
+    margin-top: 1px;
+    gap: 1px;
+  }
+
+  .movie-overview {
+    font-size: 9px;
+    padding: 5px;
+  }
 }

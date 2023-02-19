@@ -29,3 +29,25 @@
   margin-top: 10px;
   font-size: 18px;
 }
+
+@media screen and (max-width: 750px) {
+  .footer {
+    padding: 15px;
+    gap: 0.5em;
+    margin-top: 10em;
+  }
+
+  .footer a {
+    font-size: 20px;
+    display: flex;
+    color: rgb(161, 161, 161);
+  }
+
+  .footer p {
+    color: rgb(161, 161, 161);
+    display: flex;
+    justify-content: center;
+    margin-top: 6px;
+    font-size: 14px;
+  }
+}
